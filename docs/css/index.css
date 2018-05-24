@@ -1,7 +1,106 @@
+@font-face {
+	font-family: "ikamodoki";
+	src: url("../font/ikamodoki1_0.ttf");
+}
+
+@font-face {
+	font-family: "paintball";
+	src: url("../font/Paintball_Beta_3.ttf");
+}
+
 body {
-  background-image: url("../image/background_black.png");
-  background-repeat: no-repeat;
-  background-size: 1600px;
-  color: white;
-  text-align: center;
+	background-image: url("../image/background_black.png");
+	background-repeat: no-repeat;
+	background-size: 1600px;
+	
+	font-family: ikamodoki, paintball;
+	color: white;
+	text-align: center;
+	
+	padding-top: 10px;
+}
+
+div.tab-content {
+	height: 500px;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul li:not(.conditions) {
+	float: left;
+	list-style-type: none;
+	width: 25%;
+}
+
+ul li.conditions {
+	float: left;
+	list-style-type: none;
+	width: 33%;
+}
+
+ul li a {
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	padding: 9%;
+	text-align: center;
+	width: 80%;
+	background: rgba(72, 61, 139, 1.0);
+	height: 2%;
+}
+ul li a:hover{
+	background: rgba(92, 81, 159, 1.0);
+	color: white;
+}
+ 
+ul li a.current {
+	background: white;
+	color: rgba(72, 61, 139, 1.0);
+}
+
+div#menu > ul > li > a {
+	font-size: 25px;
+	height: 25px;
+}
+
+#contents{
+	clear:both;
+}
+ 
+#contents div {
+	padding: 0% 5% 5% 5%;
+	text-align: center;
+	border: 5px solid rgba(72, 61, 139, 1.0);
+	background: rgba(0, 0, 0, 0.5);
+}
+
+div.tab-content > h1 {
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+
+div.tab-content > h2, div.tab-content > ul > li > h2 {
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+div.tab-content > ul > li > h2 {
+	color: rgba(128, 139, 61, 1.0);
+}
+
+div.tab-content > ul > li > h3 {
+	font-size: 30px;
+	padding: 0px 10px 0px 10px;
+}
+
+span.strong {
+	color: rgba(139, 61, 128, 1.0);
+}
+
+img {
+	padding-top: 50px;
 }
